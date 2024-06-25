@@ -10,9 +10,9 @@ closeicon.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
-document.querySelectorAll('.submenu-toggle').forEach(toggle => {
+document.querySelectorAll('nav > ul > li').forEach(toggle => {
   toggle.addEventListener('click', () => {
-    const submenu = toggle.nextElementSibling;
+    const submenu = toggle.querySelector('ul');
     submenu.classList.toggle('active');
   });
 });
